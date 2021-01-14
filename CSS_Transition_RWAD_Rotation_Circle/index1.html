@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle_Transition</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <style>
+        body{width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        section{
+            content: " ";
+            background-color: #0b9585;
+            border: 20px solid #fff;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-top: 20px solid #06ec06;
+        }
+        section>h1{
+        width: max-content;
+            height: max-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+            font-size: 40px;
+        }
+
+        section:hover{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+        section:hover h1{
+            transform: rotate(-360deg);
+            transition-duration: 2s;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <h1>RWAD</h1>
+</section>
+
+</body>
+</html>
